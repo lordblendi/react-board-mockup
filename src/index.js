@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
+import Login from './pages/login/index';
+import './styles/default.scss';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function returnPage(page) {
+  return (<MuiThemeProvider>
+    {page}
+  </MuiThemeProvider>);
+}
+
+ReactDOM.render(returnPage(<Login/>), document.getElementById('root'));

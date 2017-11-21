@@ -1,0 +1,21 @@
+.login {
+  // text-align: center;
+  padding-top: 10%;
+
+  &__box {
+    width: 20%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  &__inputs {
+    input {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &__actions {
+    padding: 1% 0;
+  }
+}
