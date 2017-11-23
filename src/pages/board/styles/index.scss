@@ -1,0 +1,31 @@
+.login {
+  margin: 5% auto 0;
+  width: 30%;
+  height: 30%;
+  padding: 1%;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #9E9E9E;
+
+    div {
+      padding-right: 0 !important;
+    }
+  }
+
+  &__inputs {
+    text-align: center;
+  }
+
+  &__input {
+    padding: 1px;
+  }
+
+  &__actions {
+    text-align: center;
+    padding-top: 3%;
+  }
+}

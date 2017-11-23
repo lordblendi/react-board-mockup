@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './pages/login/index';
-import './styles/default.scss';
+
+// route
+import Router from './routers/router';
+import { BrowserRouter } from 'react-router-dom'
+
+// header
 import AppBar from 'material-ui/AppBar';
 
+// style
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {teal700, teal800, teal900} from 'material-ui/styles/colors'
-
+import './styles/default.scss';
 const muiTheme = getMuiTheme({
   palette: {
     primary1Color: teal900,
@@ -17,13 +22,12 @@ const muiTheme = getMuiTheme({
   }
 });
 
-function returnPage(page) {
-  return (<MuiThemeProvider muiTheme={muiTheme}>
-    <div>
-      <AppBar title="Board View" showMenuIconButton={false} />
-      {page}
-    </div>
-  </MuiThemeProvider>);
-}
 
-ReactDOM.render(returnPage(<Login/>), document.getElementById('root'));
+ReactDOM.render((<BrowserRouter>
+    <MuiThemeProvider muiTheme={muiTheme}>
+      <div>
+        <AppBar title="Board View" showMenuIconButton={false} />
+        <Router/>
+      </div>
+    </MuiThemeProvider>
+  </BrowserRouter>), document.getElementById('root'));

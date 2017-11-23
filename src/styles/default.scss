@@ -2,3 +2,20 @@ body {
   background: #f5f5f5;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+
+  button & {
+    color: white;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px;
+    user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
