@@ -9,11 +9,11 @@ class Login extends Component {
     return (
       <div className="login">
         <div className="login__box">
-          <div class="login__inputs">
+          <div className="login__inputs">
             <TextField floatingLabelText="username" />
             <TextField floatingLabelText="password" />
           </div>
-          <div class="login__actions">
+          <div className="login__actions">
             <RaisedButton label='login' />
           </div>
         </div>
