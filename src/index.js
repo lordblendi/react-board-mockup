@@ -13,6 +13,7 @@ const muiTheme = getMuiTheme({
     primary1Color: teal900,
     primary2Color: teal800,
     primary3Color: teal700,
+    shadowColor: teal900
   }
 });
 
