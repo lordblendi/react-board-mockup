@@ -9,7 +9,9 @@ class Login extends Component {
   render() {
     return (
        <Card className="login" >
-        <CardHeader title="Login" className="login__title" />
+        <CardHeader className="login__title">
+          Login
+        </CardHeader>
         <CardText className="login__inputs">
           <TextField className="login__input" floatingLabelText="username" />
           <TextField className="login__input" floatingLabelText="password" type="password" />
