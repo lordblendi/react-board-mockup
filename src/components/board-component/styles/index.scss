@@ -1,0 +1,73 @@
+.board-component {
+  border: 1px #999 solid;
+  margin: 0 3%;
+  cursor: default;
+
+  &-header {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    color: #999;
+
+    &-column {
+      display: inline-block;
+      padding: 1%;
+      width: 11%;
+      vertical-align: middle;
+    }
+  }
+
+  &-body {
+    &-row {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      border-bottom: 1px solid #aaa;
+
+      // COLORING OF BODY
+      &:nth-child(even) {
+        background: #ededed;
+      }
+
+      &:nth-child(odd) {
+        background: #f7f7f7;
+      }
+
+      &:hover {
+        background: #E0F2F1;
+      }
+
+      //  'unassigned' text design
+      &:first-child {
+        .board-component-body-row-element {
+          &:first-child {
+            font-style: italic;
+            color: #666;
+          }
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      // BODY ROW ELEMENT
+      &-element {
+        display: inline-block;
+        padding: 1%;
+        width: 11%;
+        border-left: 1px solid #ccc;
+        vertical-align: middle;
+
+        &:first-child {
+          font-weight: 400;
+          border-left: none;
+        }
+      }
+    }
+  }
+}
