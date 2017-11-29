@@ -6,12 +6,11 @@ import BoardComponentRow from '../board-component-row/index';
 
 
 class BoardComponent extends Component {
-  renderPerson(person) {
-  return ( <BoardComponentRow key={person.id} person={person} />);
-  }
-
   listUsers() {
-    return this.props.users.map((person) => this.renderPerson(person));
+    return this.props.users.map(
+      (person) =>
+      <BoardComponentRow key={person.id} person={person} />
+    );
   }
 
   render() {
