@@ -72,9 +72,14 @@ class BoardComponent extends Component {
   }
 
 
-  renderPerson(id) {
-    return (<BoardComponentRow person ={this.state.users[id]} />);
+  renderPerson(person) {
+    return (<BoardComponentRow person ={person} />);
   }
+
+  listUsers() {
+    return this.state.users.map((person) => this.renderPerson(person));
+  }
+
   render() {
       return ( <div className = "board-component" >
           <div className = "board-component-header" >
@@ -85,12 +90,8 @@ class BoardComponent extends Component {
 
           </div>
           <div className = "board-component-body" >
-            {this.renderPerson(0)}
-            {this.renderPerson(1)}
-            {this.renderPerson(2)}
-            {this.renderPerson(3)}
-            {this.renderPerson(4)}
-            {this.renderPerson(5)}
+            {this.listUsers()}
+            }
           </div>
         </div>
               );
