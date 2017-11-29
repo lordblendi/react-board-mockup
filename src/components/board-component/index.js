@@ -9,13 +9,14 @@ class BoardComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      statuses: {
-        1: "Status 1",
-        2: "Status 2",
-        3: "Status 3",
-        5: "Status 5",
-        6: "Status 6"
-      },
+      statuses: [
+        {name: "Status 1"},
+        {name: "Status 2"},
+        {name: "Status 3"},
+        {name: "Status 4"},
+        {name: "Status 5"},
+        {name: "Status 6"}
+      ],
       users : [
         {
           name: "Unassigned",
@@ -77,13 +78,11 @@ class BoardComponent extends Component {
   render() {
       return ( <div className = "board-component" >
           <div className = "board-component-header" >
-            <div className = "board-component-header-column" > Person / Status </div>
-            <div className = "board-component-header-column" > Status 1 </div>
-            <div className = "board-component-header-column" > Status 2 </div>
-            <div className = "board-component-header-column" > Status 3 </div>
-            <div className = "board-component-header-column" > Status 4 </div>
-            <div className = "board-component-header-column" > Status 5 </div>
-            <div className = "board-component-header-column" > Status 6 </div>
+          <div className = "board-component-header-column" > Person / Status </div>
+          {this.state.statuses.map(
+            (status) => <div className ="board-component-header-column">{status.name}</div>
+          )}
+
           </div>
           <div className = "board-component-body" >
             {this.renderPerson(0)}
