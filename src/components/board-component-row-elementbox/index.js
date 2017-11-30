@@ -15,18 +15,18 @@ class BoardComponentRowElementBox extends Component {
     );
   }
 
-  onMouseEnter(event){
-    const classes = "." + event.currentTarget.getAttribute('class').split(' ').join('.');
+  onMouseEnter = (event) => {
+    const classes = "." + this.getClassName().split(' ').join('.');
     $(classes).addClass('hovering');
   }
-  onMouseLeave(event){
-    const classes = "." + event.currentTarget.getAttribute('class').split(' ').join('.');
+  onMouseLeave = (event) => {
+    const classes = "." + this.getClassName().split(' ').join('.');
     $(classes).removeClass('hovering');
   }
 
   render() {
     return (
-          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>{this.renderPostits()}</div>
+          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave.bind(this)}>{this.renderPostits()}</div>
     );
   }
 }
