@@ -15,30 +15,8 @@
   &:hover {
     background: #E0F2F1;
   }
-  //  'unassigned' text design
-  &:first-child {
-    .board-component-body-row-element {
-      &:first-child {
-        font-style: italic;
-        color: #666;
-      }
-    }
-  }
 
   &:last-child {
     border-bottom: none;
-  }
-  // BODY ROW ELEMENT
-  &-elementbox {
-    display: inline-block;
-    padding: 1%;
-    width: 11%;
-    border-left: 1px solid #ccc;
-    vertical-align: middle;
-
-    &:first-child {
-      font-weight: 400;
-      border-left: none;
-    }
   }
 }

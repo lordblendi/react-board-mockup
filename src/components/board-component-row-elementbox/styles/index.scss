@@ -1,0 +1,20 @@
+.board-component-body-row-elementbox {
+  display: inline-block;
+  padding: 1%;
+  width: 11%;
+  border-left: 1px solid #ccc;
+  vertical-align: middle;
+
+  &:first-child {
+    font-weight: 400;
+    border-left: none;
+  }
+
+  //  'unassigned' text design
+  .board-component-body-row:first-child & {
+    &:first-child {
+      font-style: italic;
+      color: #666;
+    }
+  }
+}

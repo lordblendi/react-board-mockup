@@ -1,26 +1,19 @@
 import React, { Component } from 'react';
 import './styles/index.scss';
+import ElementBox from '../board-component-row-elementbox/index';
 
 class BoardComponentRow extends Component {
-
-  renderPostits(postits){
-    return postits.map(
-      (postit) =>
-          <div className="board-row-element-postit" key={postit.id}>id: {postit.id}, title: {postit.title}</div>
-    );
-  }
-
   filterPostits(statusId) {
     return this.props.person['postits'].filter(
       function (postit) {
-        return postit.statusType === statusId
+        return postit.statusType === statusId;
       });
   }
 
   renderStatuses() {
     return this.props.statuses.map(
       (status) =>
-        <div className="board-component-body-row-elementbox" key={status.id}>{this.renderPostits(this.filterPostits(status.id))}</div>
+        <ElementBox key={status.id} statusId={status.id} postits={this.filterPostits(status.id)} />
     );
   }
 
