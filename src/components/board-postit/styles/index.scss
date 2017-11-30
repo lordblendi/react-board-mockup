@@ -1,9 +1,12 @@
 .board-postit {
   width: 100px;
+  min-width: 70px;
+
   height: 100px;
   margin: 5px;
-  display: inline-block;
   padding: 2%;
+
+  flex: 1 0 25%;
 
   &-id {
     color: #bbb;

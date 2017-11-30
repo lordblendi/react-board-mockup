@@ -2,6 +2,7 @@
   border: 1px #999 solid;
   margin: 0 3%;
   cursor: default;
+  color: #333;
 
   &-header {
     margin: 0 auto;
@@ -18,12 +19,8 @@
 
     &-column {
       padding: 1%;
-      width: 11%;
+      width: 15%;
       vertical-align: middle;
-
-      &:first-child {
-        text-align: left;
-      }
     }
   }
 }

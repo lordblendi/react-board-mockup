@@ -98,6 +98,16 @@ class Board extends Component {
           },
           {
             statusType: 5,
+            title: "BDE Task 514",
+            id: "124514"
+          },
+          {
+            statusType: 5,
+            title: "BDE Task 523",
+            id: "124523"
+          },
+          {
+            statusType: 5,
             title: "BDE Task 51",
             id: "12451"
           },

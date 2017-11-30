@@ -1,16 +1,16 @@
 .board-component-body-row-elementbox {
   padding: 1%;
-  width: 11%;
+  width: 15%;
   border-left: 1px solid #ccc;
   vertical-align: middle;
   text-align: center;
 
   /*it's needed because of the cards in it*/
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   &:first-child {
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     border-left: none;
   }
