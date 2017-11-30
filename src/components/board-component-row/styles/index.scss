@@ -1,8 +1,10 @@
 .board-component-body-row {
   width: 100%;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
   border-bottom: 1px solid #aaa;
+
   // COLORING OF BODY
   &:nth-child(even) {
     background: #ededed;

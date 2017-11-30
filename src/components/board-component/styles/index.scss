@@ -13,8 +13,10 @@
     font-size: 13px;
     color: #999;
 
+    display: flex;
+    justify-content: flex-end;
+
     &-column {
-      display: inline-block;
       padding: 1%;
       width: 11%;
       vertical-align: middle;
