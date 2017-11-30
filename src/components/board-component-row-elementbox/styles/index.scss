@@ -5,6 +5,10 @@
   vertical-align: middle;
   text-align: center;
 
+  /*it's needed because of the cards in it*/
+  display: flex;
+  flex-direction: column;
+
   &:first-child {
     text-align: left;
     font-weight: 400;
@@ -17,7 +21,7 @@
     }
   }
 
-  //  'unassigned' text design
+  /*  'unassigned' text design */
   .board-component-body-row:first-child & {
     &:first-child {
       font-style: italic;
