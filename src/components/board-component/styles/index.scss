@@ -20,6 +20,10 @@
       padding: 1%;
       width: 11%;
       vertical-align: middle;
+
+      &:first-child {
+        text-align: left;
+      }
     }
   }
 }

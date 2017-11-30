@@ -3,8 +3,10 @@
   width: 11%;
   border-left: 1px solid #ccc;
   vertical-align: middle;
-
+  text-align: center;
+  
   &:first-child {
+    text-align: left;
     font-weight: 400;
     border-left: none;
   }
