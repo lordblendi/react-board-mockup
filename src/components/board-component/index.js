@@ -9,7 +9,7 @@ class BoardComponent extends Component {
   listUsers() {
     return this.props.users.map(
       (person) =>
-      <BoardComponentRow key={person.id} person={person} />
+      <BoardComponentRow key={person.id} person={person} statuses={this.props.statuses} />
     );
   }
 
