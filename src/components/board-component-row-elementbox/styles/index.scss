@@ -10,6 +10,10 @@
     border-left: none;
   }
 
+  &.hovering {
+    background: #E0F2F1;
+  }
+
   //  'unassigned' text design
   .board-component-body-row:first-child & {
     &:first-child {
