@@ -5,13 +5,17 @@ import $ from 'jquery';
 class BoardComponentRowElementBox extends Component {
 
   getClassName(){
-    return "board-component-body-row-elementbox status-" + this.props.statusId;
+    const defaultClass = "board-component-body-row-elementbox "
+    if (this.props.name !== undefined) {
+      return  defaultClass + "name";
+    }
+    return defaultClass + "status-" + this.props.statusId;
   }
 
   renderPostits(){
     return this.props.postits.map(
       (postit) =>
-          <div className="board-row-element-postit" key={postit.id}>id: {postit.id}, title: {postit.title}</div>
+          <div className="board-row-element-postit" name={""} key={postit.id}>id: {postit.id}, title: {postit.title}</div>
     );
   }
 
@@ -26,7 +30,10 @@ class BoardComponentRowElementBox extends Component {
 
   render() {
     return (
-          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave.bind(this)}>{this.renderPostits()}</div>
+          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave.bind(this)}>
+          {this.props.name !== undefined ? this.props.name : this.renderPostits()}
+
+          </div>
     );
   }
 }
