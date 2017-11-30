@@ -4,15 +4,17 @@
   border-left: 1px solid #ccc;
   vertical-align: middle;
   text-align: center;
-  
+
   &:first-child {
     text-align: left;
     font-weight: 400;
     border-left: none;
   }
 
-  &.hovering {
-    background: #E0F2F1;
+  &:not(.name) {
+    &.hovering {
+      background: #E0F2F1;
+    }
   }
 
   //  'unassigned' text design
