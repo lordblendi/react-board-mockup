@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles/index.scss';
 import $ from 'jquery';
+import BoardPostit from '../board-postit/index';
 
 class BoardComponentRowElementBox extends Component {
 
@@ -15,7 +16,7 @@ class BoardComponentRowElementBox extends Component {
   renderPostits(){
     return this.props.postits.map(
       (postit) =>
-          <div className="board-row-element-postit" name={""} key={postit.id}>id: {postit.id}, title: {postit.title}</div>
+          <BoardPostit key={postit.id} postit={postit} />
     );
   }
 
