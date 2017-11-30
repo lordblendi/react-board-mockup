@@ -13,19 +13,21 @@ class BoardComponent extends Component {
     );
   }
 
+  makeHeader() {
+    return this.props.statuses.map(
+      (status) =>
+      <div className = "board-component-header-column" key={status.id}>
+        {status.name}
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className = "board-component" >
         <div className = "board-component-header" >
           <div className = "board-component-header-column" > Person/Status </div>
-          {
-            this.props.statuses.map(
-              (status) =>
-              <div className = "board-component-header-column" key={status.id}>
-                {status.name}
-              </div>
-            )
-          }
+          {this.makeHeader()}
         </div>
         <div className = "board-component-body" >
           {this.listUsers()}
