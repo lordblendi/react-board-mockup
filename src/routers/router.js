@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Login from '../pages/login/index';
-import Board from '../pages/board/index';
+import Login from '../pages/login/login';
+import Board from '../pages/board/board';
 
 const Router = () => (
   <main>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/index.scss';
 import $ from 'jquery';
-import BoardPostit from '../board-postit/index';
+import BoardPostit from '../board-postit/board-postit';
 
 class BoardComponentRowElementBox extends Component {
 

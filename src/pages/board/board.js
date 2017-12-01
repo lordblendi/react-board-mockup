@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/index.scss';
-import BoardComponent from '../../components/board-component/index';
+import BoardComponent from '../../components/board-component/board-component';
 
 
 class Board extends Component {

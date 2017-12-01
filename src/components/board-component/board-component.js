@@ -2,7 +2,7 @@ import React, {
   Component
 } from 'react';
 import './styles/index.scss';
-import BoardComponentRow from '../board-component-row/index';
+import BoardComponentRow from '../board-component-row/board-component-row';
 
 
 class BoardComponent extends Component {
