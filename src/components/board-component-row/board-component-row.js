@@ -20,7 +20,7 @@ class BoardComponentRow extends Component {
   render() {
     return (
           <div className="board-component-body-row">
-            <ElementBox key='name' name={this.props.person.name} />
+            <ElementBox key={this.props.person.id} name={this.props.person.name} />
             {this.renderStatuses()}
           </div>
     );
