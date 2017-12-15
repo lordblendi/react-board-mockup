@@ -28,152 +28,147 @@
   ],
   "users": [{
     "name": "Unassigned",
-    "id": "Unassigned",
+    "id": "0",
     "postits": [
       {
         "statusType": 1,
-        "title": "Esco Task1",
+        "title": "Fixing bug #666",
         "id": "1221"
       },
       {
         "statusType": 2,
-        "title": "Esco Task2",
+        "title": "Analysing performance",
         "id": "1222"
       },
       {
         "statusType": 3,
-        "title": "Esco Task3",
+        "title": "Provide sorting feature",
         "id": "1223"
       },
       {
         "statusType": 4,
-        "title": "Esco Task4",
+        "title": "Escape input in login page",
         "id": "1224"
       }
     ]
   }, {
-    "name": "Arnaud",
-    "id": "Arnaud",
+    "name": "Bernard",
+    "id": "1",
     "postits": [
       {
         "statusType": 1,
-        "title": "Oslo Task 1",
+        "title": "Fix bug #42",
         "id": "1231"
       },
       {
         "statusType": 4,
-        "title": "Oslo Task 4",
+        "title": "Style log out page",
         "id": "1234"
       },
       {
         "statusType": 5,
-        "title": "Oslo Task 5",
+        "title": "Prevent CRUD operations when DB is restarting",
         "id": "1235"
       },
       {
         "statusType": 6,
-        "title": "Oslo Task 6",
+        "title": "Optimize cleanup scripts",
         "id": "1236"
       }
     ]
   }, {
-    "name": "Esteban",
-    "id": "Esteban",
+    "name": "Roger",
+    "id": "2",
     "postits": [
       {
         "statusType": 1,
-        "title": "BDE Task 11",
+        "title": "Oversee interns training",
         "id": "12411"
       },
       {
-        "statusType": 1,
-        "title": "BDE Task 12",
-        "id": "12412"
-      },
-      {
         "statusType": 5,
-        "title": "BDE Task 514",
+        "title": "Fix previous timesheets",
         "id": "124514"
       },
       {
-        "statusType": 5,
-        "title": "BDE Task 523",
+        "statusType": 4,
+        "title": "Order new servers",
         "id": "124523"
       },
       {
-        "statusType": 5,
-        "title": "BDE Task 51",
+        "statusType": 1,
+        "title": "Setup new servers",
         "id": "12451"
       },
       {
-        "statusType": 5,
-        "title": "BDE Task 52",
+        "statusType": 3,
+        "title": "Fix bug #1337",
         "id": "12452"
       }
     ]
   }, {
-    "name": "Martin",
-    "id": "Martin",
+    "name": "Antoine",
+    "id": "3",
     "postits": [
       {
         "statusType": 1,
-        "title": "Eurostat Task 1",
+        "title": "Refactor items table",
         "id": "125"
       },
       {
-        "statusType": 3,
-        "title": "Eurostat Task 3",
+        "statusType": 5,
+        "title": "Research new JS framework",
         "id": "1253"
       },
       {
-        "statusType": 2,
-        "title": "Eurostat Task 2",
+        "statusType": 1,
+        "title": "Move codebase to Ember",
         "id": "1252"
       },
       {
         "statusType": 4,
-        "title": "Eurostat Task 4",
+        "title": "Prepare dev meeting",
         "id": "1254"
       }
     ]
   }, {
-    "name": "Nóra",
-    "id": "Nóra",
+    "name": "Michel",
+    "id": "4",
     "postits": [
       {
         "statusType": 1,
-        "title": "Design Task 1",
+        "title": "Supervise interns training",
         "id": "1261"
       },
       {
         "statusType": 2,
-        "title": "Design Task 21",
+        "title": "Fix bug #1234",
         "id": "1262"
       },
       {
         "statusType": 4,
-        "title": "Design Task 41",
+        "title": "Design Task #41",
         "id": "12641"
       },
       {
         "statusType": 4,
-        "title": "Design Task 42",
+        "title": "Refactor help page",
         "id": "12642"
       }
     ]
   }, {
-    "name": "Paul",
-    "id": "Paul",
+    "name": "Freddie",
+    "id": "5",
     "postits": [
       {
-        "statusType": 1,
-        "title": "Powalco Task 1",
+        "statusType": 4,
+        "title": "Check timesheets",
         "id": "1271"
       },
       {
-        "statusType": 2,
-        "title": "Powalco Task 2",
-        "id": "1272"
+        "statusType": 1,
+        "title": "Reject timesheets",
+        "id": "666"
       }
     ]
   }]

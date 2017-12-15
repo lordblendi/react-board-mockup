@@ -7,7 +7,7 @@ class Board extends Component {
   constructor(props) {
     super(props);
     this.handleSquadChange = this.handleSquadChange.bind(this);
-    let squads = [{id:1, name:'Squad 1'}, {id:2, name:'Squad 2'}, {id:3, name:'Squad 3'}];
+    let squads = [{id:"1", name:"Squad 1"}, {id:"2", name:"Squad 2"}, {id:"3", name:"Squad 3"}, {id:"4", name:"Squad 4"}, {id:"5", name:"Squad 5"}, {id:"6", name:"Squad 6"}, {id:"7", name:"Squad 7"}];
     this.state = {statuses: [], users: [], squads, selected: squads[0].id};
 
     this.loadData(this.state.selected);
@@ -15,6 +15,7 @@ class Board extends Component {
 
 
   handleSquadChange(value) {
+    if(!value){return ;}
     const _this = this;
     this.setState({selected: value.id}, function() {
       _this.loadData(this.state.selected);
