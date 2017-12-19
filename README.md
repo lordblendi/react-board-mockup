@@ -1,3 +1,3 @@
-# React mockup
+# Board View ReactJS mockup
 
-Project to get to know react
+Simple ReactJS application to check if this fits our Board View idea
