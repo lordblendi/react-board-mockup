@@ -31,7 +31,7 @@ class BoardComponentRowElementBox extends Component {
 
   render() {
     return (
-          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave.bind(this)}>
+          <div className={this.getClassName()} key={this.props.statusId} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
           {this.props.name !== undefined ? this.props.name : this.renderPostits()}
 
           </div>
